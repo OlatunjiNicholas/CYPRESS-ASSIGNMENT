@@ -26,8 +26,8 @@ describe('verify login with vaild credential',()=>{
     })
     it('fifth username and password',()=>{
         cy.visit('https://www.saucedemo.com/')
-        cy.get('[data-test="username"]').type('error_user')
-        cy.get('[data-test="password"]').type('secret_sauce')
+        cy.get('[data-test="usernmse"]').type('error_user')
+        cy.get('[data-test="pass"]').type('secret_sauceccalss')
         cy.get('[data-test="login-button"]').click()
     })
     it('sixth username and password',()=>{

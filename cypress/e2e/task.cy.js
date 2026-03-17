@@ -1,5 +1,14 @@
-describe('LOGIN', () => {
-  it('standard user', () => {
+describe('LOGIN', ()=>{
+  it('first credential',()=>{
     cy.visit('https://www.saucedemo.com/')
+    cy.get('[data-test="username"]').type('standard_user')
+    cy.get('[data-test="password"]').type('secret_sauce')
+    cy.get('[data-test="login-button"]').click()
+  })
+  it(' credential',()=>{
+    cy.visit('https://www.saucedemo.com/')
+    cy.get('[data-test="username"]').type('standard')
+    cy.get('[data-test="password"]').type('secret_sauce')
+    cy.get('[data-test="login-button"]').click()
   })
 })
